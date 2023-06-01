@@ -1,0 +1,17 @@
+{
+    "name": "guyu-car",
+    "version": "1.0.0",
+    "description": "",
+    "miniprogram": "dist",
+    "scripts": {},
+    "keywords": [],
+    "author": "",
+    "license": "",
+    "dependencies": {
+      "@vant/weapp": "^1.10.19"
+    },
+    "devDependencies": {
+      "miniprogram-api-typings": "^3.9.1"
+    }
+  }
+  

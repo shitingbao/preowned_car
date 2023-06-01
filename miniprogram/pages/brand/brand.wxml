@@ -1,0 +1,14 @@
+<van-index-bar :sticky="false" >
+    <view wx:for="{{elementNameList}}" wx:for-index="key"  wx:for-item="value" wx:key="key">
+       <!--显示 A-Z -->
+        <van-index-anchor :use-slot="true" index='{{key}}'>
+          </van-index-anchor>
+           <!--遍历每个字母对应的名字数组-->
+       <view  wx:for='{{value}}' wx:for-item='elementName' wx:key="key">
+        <!-- <van-cell :title="{{elementName}}" /> -->
+        <van-cell class="element" data-elementName="{{elementName}}" bindtap="changeElement" >{{elementName}} </van-cell>
+        <van-divider />
+       </view>
+       
+    </view>
+</van-index-bar>

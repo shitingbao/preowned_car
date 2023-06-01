@@ -1,0 +1,64 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view>
+  <button bindtap="bindViewLogin">click</button>
+  </view>
+</view> -->
+<view>
+    <van-sticky>
+        <view class="header">
+            <van-button slot="button" size="mini" type="primary" bindtap="sendSms">全国</van-button>
+            <van-search class="header-search" value="{{ selectValue }}" placeholder="请输入搜索关键词" />
+        </view>
+        <view class="title">
+            <view class="title-content">
+                <van-dropdown-menu>
+                    <van-dropdown-item value="{{ carTypeValue }}" options="{{ carOption }}" />
+                </van-dropdown-menu>
+            </view>
+            <view class="title-content">
+                <van-dropdown-menu>
+                    <van-dropdown-item value="{{ orderTypeValue }}" options="{{ orderOption }}" />
+                </van-dropdown-menu>
+            </view>
+            <view class="title-content" bindtap="toBrand">品牌</view>
+            <view class="title-content" bindtap="showCondition">价格区间</view>
+            <view class="title-content">更多</view>
+        </view>
+    </van-sticky>
+    <view>
+        <van-divider />
+        <view wx:if="{{isCondition}}"> this is Condition </view>
+        <view wx:for="{{goods}}" wx:key="key">
+            <van-card
+            num="2"
+            price="2.00"
+            desc="描述信息"
+            title="商品标题"
+            thumb="{{ imageURL }}"
+            />
+            <van-divider />
+        </view>
+
+    </view>
+</view>
