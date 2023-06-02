@@ -41,28 +41,28 @@
                     <van-dropdown-item value="{{ orderTypeValue }}" options="{{ orderOption }}" />
                 </van-dropdown-menu>
             </view>
-            <view class="title-content" bindtap="toBrand">品牌</view>
-            <view class="title-content" bindtap="showCondition">价格区间</view>
-            <view class="title-content" bindtap="toCondition">更多</view>
+            <van-button class="title-content" bindtap="toBrand">品牌</van-button>
+            <van-button class="title-content" bindtap="showCondition">价格</van-button>
+            <van-button class="title-content" bindtap="toCondition">更多</van-button>
         </view>
     </van-sticky>
     <view>
         <van-divider />
         <view wx:if="{{isCondition}}"> 
             <view class="condition">
-                <van-button type="default">朴素按钮</van-button>
-                <van-button type="default">朴素按钮</van-button>
-                <van-button type="default">朴素按钮</van-button>
+                <van-button type="default">不限价格</van-button>
+                <van-button type="default">3万以下</van-button>
+                <van-button type="default">3-5万</van-button>
             </view>
             <view class="condition">
-                <van-button type="default">朴素按钮</van-button>
-                <van-button type="default">朴素按钮</van-button>
-                <van-button type="default">朴素按钮</van-button>
+                <van-button type="default">5-10万</van-button>
+                <van-button type="default">10-15万</van-button>
+                <van-button type="default">15-20万</van-button>
             </view>
             <view class="condition">
-                <van-button type="default">朴素按钮</van-button>
-                <van-button type="default">朴素按钮</van-button>
-                <van-button type="default">朴素按钮</van-button>
+                <van-button type="default">20-25万</van-button>
+                <van-button type="default">25-30万</van-button>
+                <van-button type="default">30万以上</van-button>
             </view>
         </view>
         <view wx:for="{{goods}}" wx:key="key">
