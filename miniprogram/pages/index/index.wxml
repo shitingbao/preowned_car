@@ -50,19 +50,19 @@
         <van-divider />
         <view wx:if="{{isCondition}}"> 
             <view class="condition">
-                <van-button type="default">不限价格</van-button>
-                <van-button type="default">3万以下</van-button>
-                <van-button type="default">3-5万</van-button>
+                <van-button class="condition-btn" type="default">不限价格</van-button>
+                <van-button class="condition-btn" type="default">3万以下</van-button>
+                <van-button class="condition-btn" type="default">3  --  5 万</van-button>
             </view>
             <view class="condition">
-                <van-button type="default">5-10万</van-button>
-                <van-button type="default">10-15万</van-button>
-                <van-button type="default">15-20万</van-button>
+                <van-button class="condition-btn" type="default"> 5 - 10 万</van-button>
+                <van-button class="condition-btn" type="default">10-15万</van-button>
+                <van-button class="condition-btn" type="default">15-20 万</van-button>
             </view>
             <view class="condition">
-                <van-button type="default">20-25万</van-button>
-                <van-button type="default">25-30万</van-button>
-                <van-button type="default">30万以上</van-button>
+                <van-button class="condition-btn" type="default">20-25 万</van-button>
+                <van-button class="condition-btn" type="default">25-30万</van-button>
+                <van-button class="condition-btn" type="default">30万以上</van-button>
             </view>
         </view>
         <view wx:for="{{goods}}" wx:key="key">
