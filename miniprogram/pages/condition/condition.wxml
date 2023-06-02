@@ -1,0 +1,13 @@
+<view>
+    <van-divider />
+    <view wx:for="{{conditions}}" wx:for-item="value" wx:key="key">
+        <view class="condition" > {{value.name}}
+            <view>
+                {{value.condition==""?"不限":value.condition}}
+                >
+            </view>
+        </view>
+        <van-divider />
+    </view>
+    <van-button type="primary" size="large" color="#255,99,71" bindtap="toIndex">查看</van-button>
+</view>

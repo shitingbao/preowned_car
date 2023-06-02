@@ -43,7 +43,7 @@
             </view>
             <view class="title-content" bindtap="toBrand">品牌</view>
             <view class="title-content" bindtap="showCondition">价格区间</view>
-            <view class="title-content">更多</view>
+            <view class="title-content" bindtap="toCondition">更多</view>
         </view>
     </van-sticky>
     <view>

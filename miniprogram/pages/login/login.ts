@@ -17,7 +17,7 @@ Page(
             console.log("send sms",this.data.username,this.data.password,this.data.sms, ":")
         },
         bingToIndex(){
-            wx.navigateTo(
+            wx.redirectTo(
                { url:"../index/index"},
             )
         }

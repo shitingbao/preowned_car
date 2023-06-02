@@ -80,6 +80,9 @@ Page({
       
     },
     changeElement(element:any){
-        console.log("val:",element.currentTarget.dataset.elementname)
+        console.log("your elementval:",element.currentTarget.dataset.elementname)
+        wx.navigateBack({
+            
+        })
     },
   });

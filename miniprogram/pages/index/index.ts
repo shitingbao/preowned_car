@@ -90,5 +90,10 @@ Page({
         wx.navigateTo({
             url:"../brand/brand"
         })
+    },
+    toCondition(){
+        wx.navigateTo({
+            url:"../condition/condition"
+        })
     }
   });
