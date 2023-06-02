@@ -43,3 +43,9 @@
 .title-content{
     flex:1
 }
+
+.condition{
+    display: flex;
+    justify-content: space-between;
+    margin: 15rpx;
+}

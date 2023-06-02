@@ -48,7 +48,23 @@
     </van-sticky>
     <view>
         <van-divider />
-        <view wx:if="{{isCondition}}"> this is Condition </view>
+        <view wx:if="{{isCondition}}"> 
+            <view class="condition">
+                <van-button type="default">朴素按钮</van-button>
+                <van-button type="default">朴素按钮</van-button>
+                <van-button type="default">朴素按钮</van-button>
+            </view>
+            <view class="condition">
+                <van-button type="default">朴素按钮</van-button>
+                <van-button type="default">朴素按钮</van-button>
+                <van-button type="default">朴素按钮</van-button>
+            </view>
+            <view class="condition">
+                <van-button type="default">朴素按钮</van-button>
+                <van-button type="default">朴素按钮</van-button>
+                <van-button type="default">朴素按钮</van-button>
+            </view>
+        </view>
         <view wx:for="{{goods}}" wx:key="key">
             <van-card
             num="2"
