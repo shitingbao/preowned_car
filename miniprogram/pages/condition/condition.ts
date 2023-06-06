@@ -13,8 +13,10 @@ Page({
         ]
     },
   
-    onChange() {
-      
+    toContent() {
+      wx.navigateTo({
+          url:"./content/content"
+      })
     },
     toIndex(){
         wx.navigateBack({

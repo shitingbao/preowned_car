@@ -1,0 +1,6 @@
+.condition{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 0 25rpx 0 25rpx;
+}

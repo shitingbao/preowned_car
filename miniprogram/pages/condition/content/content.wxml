@@ -1,0 +1,8 @@
+<view>
+    <van-divider />
+    <view wx:for="{{contents}}" wx:for-item="value" wx:key="key">
+        <view class="condition" bindtap="toCondition"> {{value.name}}
+        </view>
+        <van-divider />
+    </view>
+</view>

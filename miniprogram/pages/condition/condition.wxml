@@ -1,7 +1,7 @@
 <view>
     <van-divider />
     <view wx:for="{{conditions}}" wx:for-item="value" wx:key="key">
-        <view class="condition" > {{value.name}}
+        <view class="condition" bindtap="toContent"> {{value.name}}
             <view>
                 {{value.condition==""?"不限":value.condition}}
                 >

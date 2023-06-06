@@ -4,7 +4,8 @@
     "pages/login/login",
     "pages/logs/logs",
     "pages/brand/brand",
-    "pages/condition/condition"
+    "pages/condition/condition",
+    "pages/condition/content/content"
   ],
   "window": {
     "backgroundTextStyle": "light",
