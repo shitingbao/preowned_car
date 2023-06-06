@@ -7,9 +7,10 @@ App<IAppOption>({
     // logs.unshift(Date.now())
     // wx.setStorageSync('logs', logs)
     console.log("thisi is on Launch")
-    wx.navigateTo(
+    wx.redirectTo(
         { url:"pages/login/login"},
      )
+    
     // 登录
     // wx.login({
     //   success: res => {
@@ -18,4 +19,11 @@ App<IAppOption>({
     //   },
     // })
   },
+  onShow(){
+    setTimeout(() => {
+        wx.hideHomeButton({
+            complete:()=>{}
+        });
+    }, 200);
+  }
 })
