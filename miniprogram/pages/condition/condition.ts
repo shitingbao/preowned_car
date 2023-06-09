@@ -14,6 +14,7 @@ Page({
     },
   
     toContent(data:any) {
+        console.log("data:",data)
         wx.navigateTo({
             url:"./content/content",
             events: {
@@ -25,7 +26,7 @@ Page({
                 }
             },
             success: function(res) {
-                if (data.currentTarget.dataset?.id){
+                if (data.currentTarget.dataset && data.currentTarget.dataset.id){
                     // 通过eventChannel向被打开页面传送数据
                     res.eventChannel.emit('acceptDataFromOpenerPage', { data: data.currentTarget.dataset.id })
                 }
