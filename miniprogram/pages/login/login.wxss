@@ -16,9 +16,10 @@ page {
 }
 
 .van-input{
-    height: 150rpx;
-    margin-top: 125rpx;
-    padding-top: 125rpx;
+    display: flex;
+    /* height: 150rpx; */
+    margin-top: 50rpx;
+    /* padding-top: 25rpx; */
 }
 
 .foot-bottom{
